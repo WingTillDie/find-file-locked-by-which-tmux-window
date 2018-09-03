@@ -24,3 +24,16 @@ Then you can switch to the window manually by pressing ```Ctrl-b``` then press `
 ```
 Effect: switched to tmux window index 38  
 Hint: you can go back to the window that you launched the script by pressing ```Ctrl-b``` then press ```l```
+## Install
+In terminal, type:  
+```sh
+curl -L https://github.com/WingTillDie/find-file-locked-by-which-tmux-window/raw/master/install.sh | sh
+```
+Then the scripts can be accessed directly by  
+```bash
+findTmuxLock.bash <filename>
+```  
+or  
+```bash
+selectTmuxLock.bash <filename>
+```
