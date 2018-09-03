@@ -9,7 +9,7 @@ or
 ./selectTmuxLock.bash <filename> #Switch tmux window index that locks the file
 ```
 ## Examples
-Example 1:
+### Example 1:
 ```bash
 ./findTmuxLock.bash /data/data/com.termux/files/usr/etc/.bash.bashrc.swp
 ```
@@ -17,9 +17,10 @@ Sample output on stdout:
 ```
 38
 ```
-
-Example 2:
+Then you can switch to the window manually by pressing ```Ctrl-b``` then press ```'``` then type ```38``` then hit ```ENTER```  
+### Example 2:
 ```bash
 ./selectTmuxLock.bash 
 ```
-Effect: switched to tmux window index 38
+Effect: switched to tmux window index 38  
+Hint: you can go back to the window that you launched the script by pressing ```Ctrl-b``` then press ```l```
