@@ -35,7 +35,7 @@ In terminal, type:
 ```sh
 curl -L https://github.com/WingTillDie/find-file-locked-by-which-tmux-window/raw/master/install.sh | sh
 ```
-Then ```findTmuxLock.bash``` and ```selectTmuxLock.bash``` will be installed to $PREFIX/local/bin/  
+Then ```findTmuxLock.bash``` and ```selectTmuxLock.bash``` will be installed to ```$PREFIX/local/bin/``` (e.g. On termux, ```$PREFIX=/data/data/com.termux/files/usr```, so it will be installed to ```/data/data/com.termux/files/usr/local/bin```)  
 Then the scripts can be accessed directly by  
 ```bash
 findTmuxLock.bash <filename>
