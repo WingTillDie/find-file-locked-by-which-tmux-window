@@ -20,15 +20,22 @@ Sample output on stdout:
 Then you can switch to the window manually by pressing ```Ctrl-b``` then press ```'``` then type ```38``` then hit ```ENTER```  
 ### Example 2:
 ```bash
-./selectTmuxLock.bash 
+./selectTmuxLock.bash /data/data/com.termux/files/usr/etc/.bash.bashrc.swp
 ```
 Effect: switched to tmux window index 38  
 Hint: you can go back to the window that you launched the script by pressing ```Ctrl-b``` then press ```l```
+## Download
+In terminal, type
+```sh
+curl -L https://github.com/WingTillDie/find-file-locked-by-which-tmux-window/raw/master/download.sh | sh
+```
+Then ```findTmuxLock.bash``` and ```selectTmuxLock.bash``` will be downloaded to current directory.
 ## Install
 In terminal, type:  
 ```sh
 curl -L https://github.com/WingTillDie/find-file-locked-by-which-tmux-window/raw/master/install.sh | sh
 ```
+Then ```findTmuxLock.bash``` and ```selectTmuxLock.bash``` will be installed to $PREFIX/local/bin/  
 Then the scripts can be accessed directly by  
 ```bash
 findTmuxLock.bash <filename>
